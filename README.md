@@ -1,9 +1,4 @@
-# IMPORTANT: Bug Fixes
-
-## `navigator.getUserMedia`
-
-`navigator.getUserMedia` is now deprecated and is replaced by `navigator.mediaDevices.getUserMedia`. To fix this bug replace all versions of `navigator.getUserMedia` with `navigator.mediaDevices.getUserMedia`
-
-## Low-end Devices Bug
-
-The video eventListener for `play` fires up too early on low-end machines, before the video is fully loaded, which causes errors to pop up from the Face API and terminates the script (tested on Debian [Firefox] and Windows [Chrome, Firefox]). Replaced by `playing` event, which fires up when the media has enough data to start playing.
+This project is based on face recognition. It detects your face and tells what your facial expressions are.
+It uses javascript face api , html and Javascript.
+Face api is a library which is basically wrap around tensorflow(one of the most popular machine learning library )
+It enables us to work on face detection in the browser.
